@@ -53,32 +53,33 @@
       </Button> -->
     </FormItem>
     <ARow class="enter-x">
-      <ACol :md="8" :xs="24">
-        <Button block @click="setLoginState(LoginStateEnum.MOBILE)">
-          {{ t('sys.login.mobileSignInFormTitle') }}
-        </Button>
-      </ACol>
-      <ACol :md="8" :xs="24" class="!my-2 !md:my-0 xs:mx-0 md:mx-2">
-        <Button block @click="setLoginState(LoginStateEnum.QR_CODE)">
-          {{ t('sys.login.qrSignInFormTitle') }}
-        </Button>
-      </ACol>
-      <ACol :md="6" :xs="24">
-        <Button block @click="setLoginState(LoginStateEnum.REGISTER)">
-          {{ t('sys.login.registerButton') }}
-        </Button>
+<!--      <ACol :md="8" :xs="24">-->
+<!--        <Button block @click="setLoginState(LoginStateEnum.MOBILE)">-->
+<!--          {{ t('sys.login.mobileSignInFormTitle') }}-->
+<!--        </Button>-->
+<!--      </ACol>-->
+<!--      <ACol :md="8" :xs="24" class="!my-2 !md:my-0 xs:mx-0 md:mx-2">-->
+<!--        <Button block @click="setLoginState(LoginStateEnum.QR_CODE)">-->
+<!--          {{ t('sys.login.qrSignInFormTitle') }}-->
+<!--        </Button>-->
+<!--      </ACol>-->
+      <ACol :md="24" :xs="24">
+        <span>Chưa có tài khoản? <a @click="setLoginState(LoginStateEnum.REGISTER)">{{ t('sys.login.registerButton') }}</a></span>
+<!--        <Button block @click="setLoginState(LoginStateEnum.REGISTER)">-->
+<!--          {{ t('sys.login.registerButton') }}-->
+<!--        </Button>-->
       </ACol>
     </ARow>
 
-    <Divider class="enter-x">{{ t('sys.login.otherSignIn') }}</Divider>
+<!--    <Divider class="enter-x">{{ t('sys.login.otherSignIn') }}</Divider>-->
 
-    <div class="flex justify-evenly enter-x" :class="`${prefixCls}-sign-in-way`">
-      <GithubFilled />
-      <WechatFilled />
-      <AlipayCircleFilled />
-      <GoogleCircleFilled />
-      <TwitterCircleFilled />
-    </div>
+<!--    <div class="flex justify-evenly enter-x" :class="`${prefixCls}-sign-in-way`">-->
+<!--      <GithubFilled />-->
+<!--      <WechatFilled />-->
+<!--      <AlipayCircleFilled />-->
+<!--      <GoogleCircleFilled />-->
+<!--      <TwitterCircleFilled />-->
+<!--    </div>-->
   </Form>
 </template>
 <script lang="ts" setup>

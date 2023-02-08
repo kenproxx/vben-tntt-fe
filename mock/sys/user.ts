@@ -10,7 +10,7 @@ export function createFakeUserList() {
       avatar: '',
       desc: 'manager',
       password: '123456',
-      token: 'fakeToken1',
+      token: 'testfake',
       homePath: '/dashboard/analysis',
       roles: [
         {
