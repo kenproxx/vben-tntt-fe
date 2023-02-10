@@ -355,7 +355,7 @@
               wrapperCol={wrapperCol}
             >
               <div style="display:flex">
-                <div style="flex:1;">{getContent()}</div>
+                <div style="flex:1; color: blue">{getContent()}</div>
                 {showSuffix && <span class="suffix">{getSuffix}</span>}
               </div>
             </Form.Item>

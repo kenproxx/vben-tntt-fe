@@ -33,8 +33,8 @@ export default {
     fileName: 'File name',
   },
   form: {
-    putAway: 'Put away',
-    unfold: 'Unfold',
+    putAway: 'Thu gọn',
+    unfold: 'Mở rộng',
     maxTip: 'The number of characters should be less than {0}',
     apiSelectNotFound: 'Wait for data loading to complete...',
   },
@@ -47,9 +47,9 @@ export default {
     search: 'Menu search',
   },
   modal: {
-    cancelText: 'Close',
-    okText: 'Confirm',
-    close: 'Close',
+    cancelText: 'Đóng',
+    okText: 'Đồng ý',
+    close: 'Đóng',
     maximize: 'Maximize',
     restore: 'Restore',
   },

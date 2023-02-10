@@ -123,6 +123,7 @@ export default {
   page: {
     page: 'Page',
 
+
     form: 'Form',
     formBasic: 'Basic Form',
     formStep: 'Step Form',
