@@ -6,8 +6,8 @@
           <a-col :span="8">
             <div :class="`${prefixCls}-top__avatar`">
               <img width="70" :src="avatar" />
-              <span>Vben</span>
-              <div>海纳百川，有容乃大</div>
+              <span>Tên thánh</span>
+              <div>Tên gọi</div>
             </div>
           </a-col>
           <a-col :span="16">
@@ -32,7 +32,7 @@
         </CollapseContainer>
       </a-col>
       <a-col :span="8" :class="`${prefixCls}-col`">
-        <CollapseContainer :class="`${prefixCls}-top__team`" title="团队" :canExpan="false">
+        <CollapseContainer :class="`${prefixCls}-top__team`" title="Liên hệ" :canExpan="false">
           <div v-for="(team, index) in teams" :key="index" :class="`${prefixCls}-top__team-item`">
             <Icon :icon="team.icon" :color="team.color" />
             <span>{{ team.title }}</span>

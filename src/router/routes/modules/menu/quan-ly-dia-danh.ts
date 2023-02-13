@@ -7,27 +7,37 @@ import { t } from '/@/hooks/web/useI18n';
 const ExceptionPage = () => import('/@/views/sys/exception/Exception.vue');
 
 const page: AppRouteModule = {
-  path: '/quan-ly-lop-hoc',
-  name: 'quan-ly-lop-hoc',
+  path: '/quan-ly-dia-danh',
+  name: 'quan-ly-dia-danh',
   component: LAYOUT,
   redirect: '/page-demo/form/basic',
   meta: {
     orderNo: 20,
     icon: 'ion:aperture-outline',
-    title: 'Quản lý lớp học',
+    title: 'Quản lý Địa danh',
   },
   children: [
     // =============================form start=============================
     {
-      path: 'lop-hoc',
-      name: 'lop-hoc',
-      component: () => import('/@/views/quan-ly-lop-hoc/index.vue'),
+      path: 'dia-danh',
+      name: 'dia-danh',
+      component: () => import('/@/views/quan-ly-dia-danh/index.vue'),
       meta: {
         title: 'Quản lý Lớp học',
         ignoreKeepAlive: true,
       },
+    },
+    {
+      path: 'xu-doan',
+      name: 'xu-doan',
+      component: () => import('/@/views/quan-ly-dia-danh/thong-tin-xu-doan.vue'),
+      meta: {
+        title: 'Thông tin xứ đoàn',
+        ignoreKeepAlive: true,
+      },
 
     },
+
     // =============================form end=============================
     // =============================exception start=============================
     {

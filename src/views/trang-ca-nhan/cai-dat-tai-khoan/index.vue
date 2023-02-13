@@ -19,20 +19,20 @@
   import { ScrollContainer } from '/@/components/Container/index';
   import { settingList } from './data';
 
-  import BaseSetting from './BaseSetting.vue';
-  import SecureSetting from './SecureSetting.vue';
-  import AccountBind from './AccountBind.vue';
-  import MsgNotify from './MsgNotify.vue';
+  import ThongTinCaNhan from './thong-tin-ca-nhan.vue';
+  import ThongTinKhac from './thong-tin-khac.vue';
+  import DoiMatKhau from './doi-mat-khau.vue';
+  import ThongTinLienHe from './thong-tin-lien-he.vue';
 
   export default defineComponent({
     components: {
       ScrollContainer,
       Tabs,
       TabPane: Tabs.TabPane,
-      BaseSetting,
-      SecureSetting,
-      AccountBind,
-      MsgNotify,
+      ThongTinCaNhan,
+      ThongTinKhac,
+      DoiMatKhau,
+      ThongTinLienHe,
     },
     setup() {
       return {

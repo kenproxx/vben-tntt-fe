@@ -58,7 +58,7 @@ export const searchFormSchema: FormSchema[] = [
   {
     field: 'nganh',
     component: 'ApiSelect',
-    label: 'Ngành',
+    label: 'Cấp bậc',
     colProps: {
       span: colEx,
     },

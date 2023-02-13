@@ -1,16 +1,16 @@
 <template>
-  <CollapseContainer title="基本设置" :canExpan="false">
+  <CollapseContainer title="Thông tin cá nhân" :canExpan="true">
     <a-row :gutter="24">
       <a-col :span="14">
         <BasicForm @register="register" />
       </a-col>
       <a-col :span="10">
         <div class="change-avatar">
-          <div class="mb-2">头像</div>
+          <div class="mb-2">Ảnh đại diện</div>
           <CropperAvatar
             :uploadApi="uploadApi"
             :value="avatar"
-            btnText="更换头像"
+            btnText="Chỉnh sửa"
             :btnProps="{ preIcon: 'ant-design:cloud-upload-outlined' }"
             @change="updateAvatar"
             width="150"
@@ -18,7 +18,7 @@
         </div>
       </a-col>
     </a-row>
-    <Button type="primary" @click="handleSubmit"> 更新基本信息 </Button>
+    <Button type="primary" @click="handleSubmit">Lưu</Button>
   </CollapseContainer>
 </template>
 <script lang="ts">
@@ -32,7 +32,7 @@
 
   import headerImg from '/@/assets/images/header.jpg';
   import { accountInfoApi } from '/@/api/demo/account';
-  import { baseSetschemas } from './data';
+  import { thongTinCaNhanSchemas } from './data';
   import { useUserStore } from '/@/store/modules/user';
   import { uploadApi } from '/@/api/sys/upload';
 
@@ -51,7 +51,7 @@
 
       const [register, { setFieldsValue }] = useForm({
         labelWidth: 120,
-        schemas: baseSetschemas,
+        schemas: thongTinCaNhanSchemas,
         showActionButtonGroup: false,
       });
 

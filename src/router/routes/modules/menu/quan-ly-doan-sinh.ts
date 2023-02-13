@@ -14,35 +14,25 @@ const page: AppRouteModule = {
   meta: {
     orderNo: 20,
     icon: 'ion:aperture-outline',
-    title: 'Quản lý đoàn sinh',
+    title: 'Quản lý Nhân sự',
   },
   children: [
     // =============================form start=============================
-    {
-      path: 'huynh-truong',
-      name: 'huynh-truong',
-      component: () => import('/@/views/quan-ly-doan-sinh/quan-ly-huynh-truong/index.vue'),
-      meta: {
-        title: 'Quản lý Huynh Trưởng',
-        ignoreKeepAlive: true,
-      },
-
-    },
-    {
-      path: 'thieu-nhi',
-      name: 'thieu-nhi',
-      component: () => import('/@/views/quan-ly-doan-sinh/quan-ly-thieu-nhi/index.vue'),
-      meta: {
-        title: 'Quản lý Thiếu nhi',
-        ignoreKeepAlive: true,
-      },
-    },
     {
       path: 'doan-sinh',
       name: 'doan-sinh',
       component: () => import('/@/views/quan-ly-doan-sinh/doan-sinh/index.vue'),
       meta: {
-        title: 'Quản lý Full',
+        title: 'Quản lý Đoàn sinh',
+        ignoreKeepAlive: true,
+      },
+    },
+    {
+      path: 'huynh-truong',
+      name: 'huynh-truong',
+      component: () => import('/@/views/quan-ly-doan-sinh/huynh-truong/index.vue'),
+      meta: {
+        title: 'Quản lý Huynh trưởng',
         ignoreKeepAlive: true,
       },
     },

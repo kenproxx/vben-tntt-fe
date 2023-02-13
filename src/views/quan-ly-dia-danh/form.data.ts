@@ -22,7 +22,7 @@ export const schemasFormSearch: FormSchema[] = [
     {
         field: 'nganh',
         component: 'ApiSelect',
-        label: 'Cấp bậc',
+        label: 'Ngành',
         colProps: {
             span: colEx,
         },
@@ -80,7 +80,7 @@ export const columns: BasicColumn[] = [
         dataIndex: 'username',
     },
     {
-        title: 'Cấp bậc',
+        title: 'Ngành',
         dataIndex: 'capBac',
     },
     {

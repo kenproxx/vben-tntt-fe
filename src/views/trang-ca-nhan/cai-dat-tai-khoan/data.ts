@@ -8,33 +8,34 @@ export interface ListItem {
   avatar?: string;
   color?: string;
 }
-
+const colLienHe = 12;
+const colTTkhac = 8;
 // tab的list
 export const settingList = [
   {
     key: '1',
-    name: '基本设置',
-    component: 'BaseSetting',
+    name: 'Thông tin cá nhân',
+    component: 'ThongTinCaNhan',
   },
   {
     key: '2',
-    name: '安全设置',
-    component: 'SecureSetting',
+    name: 'Thông tin liên hệ',
+    component: 'ThongTinLienHe',
   },
   {
     key: '3',
-    name: '账号绑定',
-    component: 'AccountBind',
+    name: 'Thông tin khác',
+    component: 'ThongTinKhac',
   },
   {
     key: '4',
-    name: '新消息通知',
-    component: 'MsgNotify',
+    name: 'Đổi mật khẩu',
+    component: 'DoiMatKhau',
   },
 ];
 
 // 基础设置 form
-export const baseSetschemas: FormSchema[] = [
+export const thongTinCaNhanSchemas: FormSchema[] = [
   {
     field: 'email',
     component: 'Input',
@@ -66,84 +67,136 @@ export const baseSetschemas: FormSchema[] = [
     colProps: { span: 18 },
   },
 ];
-
-// 安全设置 list
-export const secureSettingList: ListItem[] = [
+export const thongTinLienHeSchemas: FormSchema[] = [
   {
-    key: '1',
-    title: '账户密码',
-    description: '当前密码强度：：强',
-    extra: '修改',
+    field: 'tenBo',
+    component: 'Input',
+    label: 'Tên thánh/ tên gọi Bố',
+    colProps: { span: colLienHe },
   },
   {
-    key: '2',
-    title: '密保手机',
-    description: '已绑定手机：：138****8293',
-    extra: '修改',
+    field: 'tenBo',
+    component: 'Input',
+    label: 'Số điện thoại Bố',
+    colProps: { span: colLienHe },
   },
   {
-    key: '3',
-    title: '密保问题',
-    description: '未设置密保问题，密保问题可有效保护账户安全',
-    extra: '修改',
+    field: 'tenBo',
+    component: 'Input',
+    label: 'Tên thánh/ tên gọi Mẹ',
+    colProps: { span: colLienHe },
   },
   {
-    key: '4',
-    title: '备用邮箱',
-    description: '已绑定邮箱：：ant***sign.com',
-    extra: '修改',
+    field: 'tenBo',
+    component: 'Input',
+    label: 'Số điện thoại Mẹ',
+    colProps: { span: colLienHe },
   },
   {
-    key: '5',
-    title: 'MFA 设备',
-    description: '未绑定 MFA 设备，绑定后，可以进行二次确认',
-    extra: '修改',
+    field: 'tenBo',
+    component: 'Input',
+    label: 'Tên thánh/ tên gọi Bố',
+    colProps: { span: colLienHe },
+  },
+  {
+    field: 'tenBo',
+    component: 'Input',
+    label: 'Tên thánh/ tên gọi Bố',
+    colProps: { span: colLienHe },
+  },
+  {
+    field: 'tenBo',
+    component: 'Input',
+    label: 'Tên thánh/ tên gọi Bố',
+    colProps: { span: colLienHe },
+  },
+  {
+    field: 'tenBo',
+    component: 'Input',
+    label: 'Tên thánh/ tên gọi Bố',
+    colProps: { span: colLienHe },
+  },
+];
+export const thongTinKhacSchemas: FormSchema[] = [
+  {
+    field: 'ngayRuaToi',
+    component: 'Input',
+    label: 'Ngày rửa tội',
+    colProps: { span: colTTkhac },
+  },
+  {
+    field: 'nguoiRuaToi',
+    component: 'Input',
+    label: 'Người rửa tội',
+    colProps: { span: colTTkhac },
+  },
+  {
+    field: 'nguoiDoDauRuaToi',
+    component: 'Input',
+    label: 'Người đỡ đầu',
+    colProps: { span: colTTkhac },
+  },
+  {
+    field: 'ngayThemSuc',
+    component: 'Input',
+    label: 'Ngày thêm sức',
+    colProps: { span: colTTkhac },
+  },
+  {
+    field: 'nguoiThemSuc',
+    component: 'Input',
+    label: 'Người thêm sức',
+    colProps: { span: colTTkhac },
+  },
+  {
+    field: 'nguoiDoDauThemSuc',
+    component: 'Input',
+    label: 'Người đỡ đầu',
+    colProps: { span: colTTkhac },
+  },
+  {
+    field: 'ngayKetHon',
+    component: 'Input',
+    label: 'Ngày kết hôn',
+    colProps: { span: colTTkhac },
+  },
+  {
+    field: 'phoiNgauId',
+    component: 'Input',
+    label: 'Phối ngẫu',
+    colProps: { span: colTTkhac },
+  },
+  {
+    field: 'nguoiLamChung1',
+    component: 'Input',
+    label: 'Người làm chứng 1',
+    colProps: { span: colTTkhac },
+  },
+  {
+    field: 'nguoiLamChung2',
+    component: 'Input',
+    label: 'Người làm chứng 2',
+    colProps: { span: colTTkhac },
+  },
+];
+export const doiMatKhauSchemas: FormSchema[] = [
+  {
+    field: 'email',
+    component: 'Input',
+    label: 'Mật khẩu cũ',
+    colProps: { span: 18 },
+  },
+  {
+    field: 'name',
+    component: 'Input',
+    label: 'Mật khẩu mới',
+    colProps: { span: 18 },
+  },
+  {
+    field: 'introduction',
+    component: 'Input',
+    label: 'Nhập lại mật khẩu mới',
+    colProps: { span: 18 },
   },
 ];
 
-// 账号绑定 list
-export const accountBindList: ListItem[] = [
-  {
-    key: '1',
-    title: '绑定淘宝',
-    description: '当前未绑定淘宝账号',
-    extra: '绑定',
-    avatar: 'ri:taobao-fill',
-    color: '#ff4000',
-  },
-  {
-    key: '2',
-    title: '绑定支付宝',
-    description: '当前未绑定支付宝账号',
-    extra: '绑定',
-    avatar: 'fa-brands:alipay',
-    color: '#2eabff',
-  },
-  {
-    key: '3',
-    title: '绑定钉钉',
-    description: '当前未绑定钉钉账号',
-    extra: '绑定',
-    avatar: 'ri:dingding-fill',
-    color: '#2eabff',
-  },
-];
-
-// 新消息通知 list
-export const msgNotifyList: ListItem[] = [
-  {
-    key: '1',
-    title: '账户密码',
-    description: '其他用户的消息将以站内信的形式通知',
-  },
-  {
-    key: '2',
-    title: '系统消息',
-    description: '系统消息将以站内信的形式通知',
-  },
-  {
-    key: '3',
-    title: '待办任务',
-    description: '待办任务将以站内信的形式通知',
-  },
-];

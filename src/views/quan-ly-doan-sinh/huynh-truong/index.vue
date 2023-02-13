@@ -60,7 +60,7 @@
       const [registerModal, { openModal }] = useModal();
       const searchInfo = reactive<Recordable>({});
       const [registerTable, { reload, updateTableDataRecord }] = useTable({
-        title: 'Danh sách Huynh Trưởng',
+        title: 'Danh sách Huynh trưởng',
         api: getAccountList,
         rowKey: 'id',
         columns,
