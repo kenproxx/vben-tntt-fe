@@ -21,12 +21,11 @@ const page: AppRouteModule = {
     {
       path: 'danh-sach',
       name: 'danh-sach',
-      component: () => import('/@/views/quan-ly-doan-sinh/quan-ly-huynh-truong/index.vue'),
+      component: () => import('/@/views/quan-ly-doan-sinh/huynh-truong/index.vue'),
       meta: {
         title: 'Quản lý Huynh Trưởng',
         ignoreKeepAlive: true,
       },
-
     },
     // =============================form end=============================
     // =============================exception start=============================
